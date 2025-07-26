@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: v1.0.0
+      author: Prates
+      tagDatabase:
+        tag: v1.0.0
+  - include:
+      - file: ./migrations/20250724145916_create_schema.sql
+  - include:
+      - file: ./migrations/20250725142806_create_users_table.sql
+  - include:
+      - file: ./migrations/20250725150127_create_sports_table.sql
+  - include:
+      - file: ./migrations/20250725150155_create_registered_tranings_table.sql
